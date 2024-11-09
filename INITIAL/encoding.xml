@@ -1,0 +1,32 @@
+<instructions_encoding>
+
+	<names_for_encoding_bits>
+		<bit	index="0"	name="ir1(15)"	/>
+		<bit	index="1"	name="ir1(14)"	/>
+		<bit	index="2"	name="ir1(13)"	/>
+		<bit	index="3"	name="ir1(12)"	/>
+		<bit	index="4"	name="ir1(11)"	/>
+	</names_for_encoding_bits>
+
+	<instruction_codes>
+	 <instruction	name="add"	code="00001"	/>
+	 <instruction	name="and"	code="00010"	/>
+	 <instruction	name="bcz"	code="01001" 	/>
+	 <instruction	name="bun"	code="01000" 	/>
+	 <instruction	name="com"	code="00100" 	/>
+	 <instruction	name="inc"	code="00101" 	/>
+	 <instruction	name="inp"	code="11000" 	/>
+	 <instruction	name="iof"	code="11011"	/>
+	 <instruction	name="ion"	code="11010"	/>
+	 <instruction	name="lod"	code="10001"	/>
+	 <instruction	name="out"	code="11001" 	/>
+	 <instruction	name="shl"	code="00110"	/>
+	 <instruction	name="shr"	code="00111"	/>
+	 <instruction	name="ski"	code="11100"	/>
+	 <instruction	name="sko"	code="11101"	/>
+	 <instruction	name="str"	code="10011"	/>
+	 <instruction	name="sub"	code="00011"	/>
+	</instruction_codes>
+
+</instructions_encoding>
+

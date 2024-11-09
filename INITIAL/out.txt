@@ -1,0 +1,17 @@
+Micro Instructions:
+Y1 = y1
+Y2 = y2 y3
+Y3 = y4
+Y4 = y5
+
+Micro Operations:
+y1  :  outr:=br
+y2  :  bor_adr:=ir1(7-4)
+y3  :  br:=bor[bor_adr]
+y4  :  dmacycle
+y5  :  fetch1
+
+Logical Conditions:
+File 	 Draw
+x1  : dma
+x2  : s

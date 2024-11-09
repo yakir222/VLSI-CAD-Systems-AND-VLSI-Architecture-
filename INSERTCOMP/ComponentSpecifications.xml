@@ -1,0 +1,11 @@
+<components_specification>
+	<component path="C:\Users\ykome\Desktop\vlsi_project\samary\08-05-24\COMPONENTS\alu.vhd">
+		<entity name="alu">
+			<port name="inp1" direction="in" subtype="std_logic_vector" width="16"/>
+			<port name="inp2" direction="in" subtype="std_logic_vector" width="16"/>
+			<port name="ctr" direction="in" subtype="std_logic_vector" width="5"/>
+			<port name="outp" direction="out" subtype="std_logic_vector" width="16"/>
+			<port name="z" direction="out" subtype="std_logic" width="1"/>
+		</entity>
+	</component>
+</components_specification>

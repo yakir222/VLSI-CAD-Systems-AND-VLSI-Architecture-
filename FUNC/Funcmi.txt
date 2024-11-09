@@ -1,0 +1,78 @@
+Micro Instructions:
+Y1 = y1 y2 y3 y4 y5
+Y2 = y6 y7
+Y3 = y8 y9
+Y4 = y10 y11
+Y5 = y10 y12
+Y6 = y13
+Y7 = y8 y14
+Y8 = y15
+Y9 = y6 y16
+Y10 = y10 y17
+Y11 = y18
+Y12 = y19
+Y13 = y6 y12
+Y14 = y20
+Y15 = y8 y21
+Y16 = y6 y17
+Y17 = y22
+Y18 = y23
+Y19 = y24 y25
+Y20 = y24 y26
+Y21 = y27 y28
+Y22 = y27 y29
+Y23 = y30
+Y24 = y31
+Y25 = y32 y33
+Y26 = y32 y34
+
+Micro Operations :
+y1  : alu_inp1:=br
+y2  : alu_inp2:=ir2
+y3  : alu_ctr:=ir1(15-11)
+y4  : ralu:=alu_outp
+y5  : zf:=alu_z
+y6  : bor_adr:=ir1(3-0)
+y7  : ir2:=bor[bor_adr]
+y8  : m1_adr:=ir2
+y9  : br:=m1[m1_adr]
+y10  : bor_adr:=ir1(7-4)
+y11  : bor[bor_adr]:=ralu
+y12  : br:=bor[bor_adr]
+y13  : ir2:=br
+y14  : pc:=m1[m1_adr]
+y15  : pc:=ir2
+y16  : pc:=bor[bor_adr]
+y17  : bor[bor_adr]:=br
+y18  : br:=inpr
+y19  : br:=ir2
+y20  : outr:=br
+y21  : m1[m1_adr]:=br
+y22  : br:=br1
+y23  : br1:=br
+y24  : m1_adr:=ext_adr
+y25  : m1[m1_adr]:=ext_out
+y26  : ext_in:=m1[m1_adr]
+y27  : m0_adr:=ext_adr
+y28  : m0[m0_adr]:=ext_out
+y29  : ext_in:=m0[m0_adr]
+y30  : ir2:=ir2+br
+y31  : pc:=pc+1
+y32  : m0_adr:=pc
+y33  : ir2:=m0[m0_adr]
+y34  : ir1:=m0[m0_adr]
+
+Logical Conditions :
+File 	 Draw
+x1  : ir1(10)
+x2  : ir1(8)
+x3  : dma
+x4  : s
+x5  : zf
+x6  : ir1(15)
+x7  : ir1(14)
+x8  : ir1(12)
+x9  : ir1(11)
+x10  : m
+x11  : ext_rdwr
+x12  : ir1(3-0)="0000"

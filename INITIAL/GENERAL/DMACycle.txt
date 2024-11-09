@@ -1,0 +1,18 @@
+Micro Instructions:
+Y1 = y1 y2
+Y2 = y1 y3
+Y3 = y4 y5
+Y4 = y4 y6
+
+Micro Operations:
+y1  :  m1_adr:=ext_adr
+y2  :  m1[m1_adr]:=ext_out
+y3  :  ext_in:=m1[m1_adr]
+y4  :  m0_adr:=ext_adr
+y5  :  m0[m0_adr]:=ext_out
+y6  :  ext_in:=m0[m0_adr]
+
+Logical Conditions:
+File 	 Draw
+x1  : m
+x2  : ext_rdwr

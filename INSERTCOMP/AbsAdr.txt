@@ -1,0 +1,12 @@
+Micro Instructions:
+Y1 = y1 y2
+Y2 = y3
+
+Micro Operations:
+y1  :  bor_adr:=ir1(3-0)
+y2  :  br:=bor[bor_adr]
+y3  :  ir2:=ir2+br
+
+Logical Conditions:
+File 	 Draw
+x1  : ir1(3-0)="0000"

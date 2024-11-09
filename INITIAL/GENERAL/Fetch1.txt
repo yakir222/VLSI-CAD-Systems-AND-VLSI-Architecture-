@@ -1,0 +1,11 @@
+Micro Instructions:
+Y1 = y1
+Y2 = y2 y3
+
+Micro Operations:
+y1  :  pc:=pc+1
+y2  :  m0_adr:=pc
+y3  :  ir1:=m0[m0_adr]
+
+Logical Conditions:
+File 	 Draw
